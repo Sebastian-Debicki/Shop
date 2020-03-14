@@ -1,0 +1,32 @@
+.pagination {
+  width: 100%;
+  margin: 2rem 0;
+  text-align: right;
+  font-size: $default-font-size;
+
+  &__select {
+    margin: 0 1rem;
+    background-color: $color-grey-light-2;
+    padding: .5rem 1.5rem;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  &__btn {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    display: inline-block;
+    background-color: $color-primary-dark;
+    transition: .3s;
+
+    &:hover {
+      color: white;
+    }
+
+    &:disabled {
+      color: grey;
+    }
+  }
+}

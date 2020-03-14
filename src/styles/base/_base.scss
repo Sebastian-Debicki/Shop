@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 50%;
+
+  @include respond(phone) {
+    font-size: 53.15%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 54.25%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 60%;
+  }
+
+  @include respond(desktop) {
+    font-size: 65%;
+  }
+}

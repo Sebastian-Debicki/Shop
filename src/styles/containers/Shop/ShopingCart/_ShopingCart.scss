@@ -1,0 +1,39 @@
+.shoping-cart {
+  width: 40rem;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background-color: white;
+  transition: all .4s;
+  z-index: 500;
+  background-color: $color-grey-light-2;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &__heading {
+    font-size: 2rem;
+    padding: 4.5rem;
+    letter-spacing: .1rem;
+    border-bottom: 1px solid $color-primary-dark;
+  }
+
+  &__empty-cart {
+    list-style: none;
+    font-size: $default-font-size;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 2rem;
+    max-height: 60vh;
+    overflow: auto;
+
+    @include respond(phone-land) {
+      max-height: 28vh;
+    }
+  }
+}

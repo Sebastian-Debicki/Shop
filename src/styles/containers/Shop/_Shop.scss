@@ -1,0 +1,27 @@
+.shop {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $color-primary;
+  padding: 1rem 3rem;
+}
+
+.success {
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 1.8rem;
+  color: $color-primary-dark;
+
+  &__main {
+    color: $color-primary;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+.error {
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 1.8rem;
+  color: red;
+}

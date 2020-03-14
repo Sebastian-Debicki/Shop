@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: $color-grey-light-2;
+  z-index: 3000;
+  padding: 1rem;
+  border-radius: 3px;
+
+  @include respond(phone) {
+    width: 65%;
+  }
+
+  @include respond(phone-land) {
+    padding: 0;
+  }
+
+  @include respond(tab-port) {
+    width: 45%;
+  }
+
+  @include respond(tab-land) {
+    width: 40%;
+  }
+
+  @include respond(desktop) {
+    width: 30%;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    font-size: 2.5rem;
+  }
+}

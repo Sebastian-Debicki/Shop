@@ -1,0 +1,18 @@
+.shop-list {
+  width: 100%;
+  position: relative;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__founded-products {
+    position: absolute;
+    top: 5rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
