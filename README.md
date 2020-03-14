@@ -60,7 +60,7 @@ npm test
 
 ## API
 
-* [Products](https://www.reasonapps.pl/data.json) - All companies
+* [Products](https://www.reasonapps.pl/data.json)
 
 
 ## Author
