@@ -61,10 +61,11 @@
 }
 
 .counter {
-  width: 38%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 
   &__btn {
     font-size: $default-font-size;
