@@ -9,8 +9,11 @@ beforeEach(() => {
 describe('useShopState', () => {
   it('filterShopListHandler - state has correct value when user searching product', () => {
     const { result } = renderHook(useShopState);
+    act(() => result.current.changePageHandler('next'))
+    act(() => result.current.changePageHandler('next'))
     act(() => result.current.filterShopListHandler({ target: { value: 'some-search-value' } }))
-    expect(result.current.searchValue).toEqual('some-search-value')
+    expect(result.current.searchValue).toEqual('some-search-value');
+    expect(result.current.currentPage).toEqual(1);
   })
 
   it('toggleShoppingCartHandler - state has correct value when user open the Shopping Cart', () => {

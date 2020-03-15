@@ -11,7 +11,6 @@ export const useShopState = () => {
   const [openSummaryModal, setOpenSummaryModal] = React.useState(false);
   const [openSuccessModal, setOpenSuccessModal] = React.useState(false);
 
-  const filterShopListHandler = (e) => setSearchValue(e.target.value);
   const toggleShoppingCartHandler = () => setOpenShoppingCart(!openShoppingCart);
   const openSummaryModalHandler = () => { setOpenSummaryModal(true); setOpenShoppingCart(false); };
   const closeSummaryModalHandler = () => setOpenSummaryModal(false);
@@ -68,6 +67,11 @@ export const useShopState = () => {
     saveShoppingCartToStorage(shoppingCartListUpdated)
     setShoppingCartList(shoppingCartListUpdated)
   }
+
+  const filterShopListHandler = (e) => {
+    setSearchValue(e.target.value);
+    setCurrentPage(1)
+  };
 
   const changePageHandler = (type) => {
     switch (type) {
