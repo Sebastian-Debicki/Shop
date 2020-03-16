@@ -1,17 +1,10 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
-@import './abstracts/functions';
-@import './components/button/button';
 
-@import './base/utilities';
 @import './base/base';
-@import './base/animations';
 @import './base/typography';
 
-@import './containers/Shop/Shop';
-@import './containers/Shop/ShopingCart/ShopingCart';
-@import './containers/Shop/ShopList/ShopList';
-
+@import './components/button/button';
 @import './components/ShopListItem/ShopListItem';
 @import './components/Input/Input';
 @import './components/ShopingCartIcon/ShopingCartIcon';
@@ -21,3 +14,7 @@
 @import './components/Modal/Modal';
 @import './components/OrderSummary/OrderSummary';
 @import './components/TotalPriceSummary/TotalPriceSummary';
+
+@import './containers/Shop/Shop';
+@import './containers/Shop/ShopingCart/ShopingCart';
+@import './containers/Shop/ShopList/ShopList';
